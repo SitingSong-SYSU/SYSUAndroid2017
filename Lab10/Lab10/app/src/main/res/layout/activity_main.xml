@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/searchET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/clearBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/searchET"
+        android:layout_below="@+id/searchET"
+        android:background="@drawable/shape"
+        android:text="CLEAR"
+        android:textColor="#fff"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/fetchBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/searchET"
+        android:layout_below="@+id/searchET"
+        android:background="@drawable/shape"
+        android:text="FETCH"
+        android:textColor="#fff"
+        android:layout_marginBottom="20dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/userRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clearBT"/>
+
+    <ProgressBar
+        android:id="@+id/waitPB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/userRV"
+        android:padding="175dp"
+        android:visibility="invisible"/>
+</RelativeLayout>

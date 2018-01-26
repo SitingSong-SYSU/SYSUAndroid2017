@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <TableRow
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="姓名:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/nameDL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text=""
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:stretchColumns="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="生日:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/birthDL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="请输入生日"
+                android:stretchColumns="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="礼物:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/giftDL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="请输入礼物"
+                android:stretchColumns="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="电话:"
+                android:textColor="#32CD32"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/phoneDL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="24dp"
+                android:stretchColumns="1"
+                android:text="无"
+                android:textColor="#32CD32"
+                android:textSize="18sp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/headTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="headTV"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="2dp"/>
+
+    <TextView
+        android:id="@+id/desTV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="desTV1"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/desTV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="desTV2"
+        android:textSize="14dp"
+        android:padding="2dp"
+        android:ellipsize="end"
+        android:singleLine="true"/>
+</LinearLayout>
